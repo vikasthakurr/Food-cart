@@ -1,0 +1,97 @@
+*{
+
+	margin: -5px;
+	padding: 3px;
+	font-family: sans-serif;
+}
+body{
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("img/burger.jpg");
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;
+}
+.nav-bar{
+	display: flex;
+	padding: 32px 25px;	
+}
+.nav-logo {
+	color: #fff;
+	font-weight: bold;
+	font-size: 30px;
+
+}
+.nav-links{
+	flex: 1;
+}
+.nav-links ul{
+	/*float: right;*/
+	margin-left: 50px;
+	display: inline-block;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 16px 30px;
+}
+
+.nav-links ul a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+}
+.nav-links ul li::after{
+	content:'';
+	width: 0;
+	height: 2px;
+	background: yellow;
+	display: block;
+	margin:2px;
+}
+.nav-links ul li:hover::after{
+	width: 100px;
+
+}
+.btn{
+	padding: 10px 20px;
+	border: 0;
+	background: yellow;
+	font-weight: bold;
+	cursor: pointer;
+
+}
+.nav-links .btn{
+	float: right;
+}
+.banner-title{
+	margin: 80px 130px;
+	color: #fff;
+
+}
+.banner-title h1{
+	font-size: 64px;
+	margin-bottom: 30px;
+}
+.banner-title h1 span{
+	color:yellow;
+}
+.vertical-bar{
+	height: 100%;
+	background: #fff;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.search-icon{
+	height: 60%;
+	width: 80px;
+
+}
+.search-icon .fas{
+	margin: 45px 23px;
+	display: block;
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+}
